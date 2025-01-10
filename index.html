@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Photo</title>
+    <script>
+        const photos = [
+            "https://drive.google.com/file/d/1LuSVNG7UyvOM583SwZtH0-M0kSS2uIqW",
+            "https://drive.google.com/file/d/1_dloOtwrZP3BZF1Mo17bJAX9_m92N4hq",
+            "https://drive.google.com/file/d/1mB5ck2zRper7vu5IpjlQe_rSxbaOx92x"
+        ];
+
+        // Redirection vers un son aléatoire
+        window.onload = () => {
+            const randomIndex = Math.floor(Math.random() * photos.length);
+            window.location.href = photos[randomIndex];
+        };
+    </script>
+</head>
+<body>
+    <p>Redirecting to a random photo...</p>
+</body>
+</html>
